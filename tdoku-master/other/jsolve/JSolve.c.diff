@@ -1,0 +1,15 @@
+106a107
+> static int did_eliminations;                    // If locked candidates did eliminations
+650a652
+> 	did_eliminations = 0;
+668a671
+> 			    did_eliminations = 1;
+739a743,744
+> extern size_t JSolve_guesses;
+> 
+769a775
+>         JSolve_guesses++;
+846c852
+< 				if (queue_depth<=0 && !invalid_board) Guess();
+---
+> 				if (queue_depth<=0 && !did_eliminations && !invalid_board) Guess();

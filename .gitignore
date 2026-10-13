@@ -1,18 +1,23 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
 
-# Other files and folders
-.settings/
+# 运行时数据与调试产物
+puzzle/
+dbg/
+output/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# PyInstaller 打包产物（成品建议通过 Releases 发布）
+dist/
+build/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Tdoku 跑分题库（约 70MB，与本项目功能无关，
+# 需要时可从 https://github.com/t-dillon/tdoku 获取 data.zip）
+tdoku-master/data.zip
+tdoku-master/build/
+
+# 编辑器 / 系统
+.vscode/
+.DS_Store
+Thumbs.db
